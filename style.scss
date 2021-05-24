@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 body{
-    font-family: 'Merriweather', serif;
+    // font-family: 'Merriweather', serif;
     background: url("img/4.jpeg") fixed border-box no-repeat;
     background-size: cover;
     .contenedor{
@@ -121,7 +121,6 @@ body{
         .contenedor{
             header{
                 nav{
-
                     display: grid;
                     justify-content: center;
                     ul{
@@ -130,16 +129,25 @@ body{
                 }
             }
             main{
+                display: grid;
+                grid-template-columns: 1fr;
                 section{
+                    grid-row: span 1;
+                    grid-column: span 1;
+                    display: grid;
                     grid-template-columns: 1fr;
-                    grid-template-rows: 1fr 1fr;
+                    row-gap: 10px;
                     article{
-
+                        object-fit: contain;
+                        p{
+                            margin: 5px;
+                        }
                     }
                 }
             }
             footer{
                 .icons{
+                    padding: 20px 0;
                     justify-content: space-around;
                 }
             }

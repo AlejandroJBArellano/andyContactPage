@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
 body {
-  font-family: 'Merriweather', serif;
   background: url("img/4.jpeg") fixed border-box no-repeat;
   background-size: cover;
 }
@@ -156,13 +155,30 @@ body .contenedor footer .icons a i:hover {
   body .contenedor header nav ul {
     display: none;
   }
-  body .contenedor main section {
+  body .contenedor main {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+  }
+  body .contenedor main section {
+    grid-row: span 1;
+    grid-column: span 1;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  body .contenedor main section article {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  body .contenedor main section article p {
+    margin: 5px;
   }
   body .contenedor footer .icons {
+    padding: 20px 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
