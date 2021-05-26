@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 body{
     // font-family: 'Merriweather', serif;
     background: url("img/4.jpeg") fixed border-box no-repeat;
@@ -24,7 +25,13 @@ body{
                         color: white;
                     }
                 }
+                .menu{
+                    #menu{
+                        display: none;
+                    }
+                }
                 ul{
+                    // display: block;
                     margin: 0;
                     padding: 20px;
                     li{
@@ -102,6 +109,33 @@ body{
                     }
                 }
             }
+            section:nth-child(3){
+                display: grid;
+                place-items: center;
+                #contact{
+                    border: 3px inset #7d1bb1;
+                    background-image: linear-gradient(225deg, rgba(25, 136, 247, 1) 0%, rgba(109, 13, 160, 1) 0%, rgba(221, 24, 247, 1) 100%);
+                    color: white;
+                    margin: 10px 0;
+                    border-radius: 40px 0px 40px 0px;
+                    padding: 7px 10px;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 15px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                #programmer > div > div.left_container.active > div.icons > a > i{                  
+                    font-size: 2rem;
+                    margin-top: 10px;
+                }
+                #programmer{
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -123,8 +157,41 @@ body{
                 nav{
                     display: grid;
                     justify-content: center;
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 1fr 1fr;
+                    .logo{
+                        padding:20px;
+                    }
+                    .menu{
+                        position: relative;
+                        z-index: 10;
+                        display: grid;
+                        justify-content: right;
+                        align-content: center;
+                        margin-left: -60%;
+                        #menu{
+                            vertical-align: top;
+                            width: 40px;
+                            cursor: pointer;
+                            display: inline-block;
+                            padding: 0 20px;
+                            color: white;
+                        }
+                    }
                     ul{
+                        margin-bottom: -40px;
                         display: none;
+                        background-color:#442054;
+                        height: 100vh;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transition: all .5 ease;
+                        li{
+                            display: grid;
+                            grid-row: span 1;
+                            margin: 30px 0;
+                        }
                     }
                 }
             }
@@ -150,7 +217,16 @@ body{
                     padding: 20px 0;
                     justify-content: space-around;
                 }
+                section:nth-child(3){
+                    z-index: 7;
+                    #programmer > div > div.left_container.active > div.icons{                  
+                        padding: 0;
+                    }
+                }
             }
         }
     }
+}
+.active-ul{
+    transform: translate(-60vw);
 }

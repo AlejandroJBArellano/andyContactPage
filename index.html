@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <!-- <link rel="stylesheet" href="https://alejandrojbarellano.github.io/aleCSS/framework.css"> -->
+    <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icono/piano.ico" type="image/x-icon">
     <title>Pianista Andy Ramírez</title>
@@ -17,8 +18,11 @@
                 <div class="logo">
                     <a href="#">Andrea Ramírez</a>
                 </div>
-                <ul>
-                    <li><a href="#b">Biografía</a></li>
+                <div class="menu">
+                    <img src="icono/menu-hamburguesa.png" id="menu">
+                </div>
+                <ul id="deploy" class="active-ul">
+                    <li><a href="#b">Trayecto</a></li>
                     <li><a href="#t">Trabajo</a></li>
                     <li><a href="#c">Contacto</a></li>
                 </ul>
@@ -33,7 +37,7 @@
                     <img class="multimedia-ajustado" src="img/niña.jpeg">
                 </article>
                 <article>
-                    <p>Andrea Ramírez, originaria de Uruapan, ha estudiado por 4 años en la Escuela de música Crescendo bajo la tutela del maestro Grivan Pérez. Ha participado en múltiples conciertos principalmente como solista, pero también como pianista acompañante y como parte de música de cámara.</p>
+                    <p>Andrea Ramírez, originaria de Uruapan, ha estudiado por 4 años en la Escuela de música Crescendo bajo la tutela del maestro Grivan Pérez. También ha tomado clases magistrales con maestros de Rusia y Alemania. Ha participado en múltiples conciertos principalmente como solista, pero también como pianista acompañante y como parte de música de cámara.</p>
                 </article>
             </section>
             <section>
@@ -62,16 +66,51 @@
             </section>
         </main>
         <footer id="c">
-            <div class="title">
+            <section class="title">
                 <p>Contáctame a través de mis redes sociales</p>
-            </div>
-            <div class="icons">
+            </section>
+            <section class="icons">
                 <a href="https://www.youtube.com/channel/UC_OwO0gL2ONqxf9qCp9Yy6w"><i class="fab fa-youtube"></i></a>
                 <a href="https://instagram.com/andreandycham?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.facebook.com/andreaatziri.ramirezrodriguez.7"><i class="fab fa-facebook"></i></a>
-            </div>
+            </section>
+            <section>
+                <button id="contact">Contacto del programador</button>
+                <div class="main center" id="programmer">
+                    <div class="box center">
+                        <img src="https://www.fillmurray.com/640/360" alt="">
+                        <div>
+                            <p class="user_name">Alejandro Arellano</p>
+                            <p class="skill">Full Stack JS Developer</p>
+                        </div>
+                        <div class="arr_container center ">
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="left_container off">
+                            <p>Skills</p>
+                            <div class="skills">
+                                <div>Python</div>
+                                <div>Mongo DB</div>
+                                <div>React</div>
+                                <div>Node Js</div>
+                            </div>
+                            <div class="icons">
+                                <a href="https://github.com/AlejandroJBArellano"><i class="fab fa-github" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/alejandrojsdeveloper/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/arellanodevweb/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://www.facebook.com/Arellano-Full-Stack-Developer-102485652047487"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="cancel center">
+                                <i class="fas fa-times" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </footer>
     </div>
+    <script src="card.js"></script>
+    <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/f6816dd194.js" crossorigin="anonymous"></script>
 </body>
 </html>

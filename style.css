@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 body {
   background: url("img/4.jpeg") fixed border-box no-repeat;
   background-size: cover;
@@ -35,6 +36,10 @@ body .contenedor header nav .logo {
 body .contenedor header nav .logo a, body .contenedor header nav .logo a:visited {
   text-decoration: none;
   color: white;
+}
+
+body .contenedor header nav .menu #menu {
+  display: none;
 }
 
 body .contenedor header nav ul {
@@ -130,6 +135,40 @@ body .contenedor footer .icons a i:hover {
   color: #2c5364;
 }
 
+body .contenedor footer section:nth-child(3) {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+body .contenedor footer section:nth-child(3) #contact {
+  border: 3px inset #7d1bb1;
+  background-image: linear-gradient(225deg, #1988f7 0%, #6d0da0 0%, #dd18f7 100%);
+  color: white;
+  margin: 10px 0;
+  border-radius: 40px 0px 40px 0px;
+  padding: 7px 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+}
+
+body .contenedor footer section:nth-child(3) #contact:hover {
+  cursor: pointer;
+}
+
+body .contenedor footer section:nth-child(3) #contact:focus {
+  outline: none;
+}
+
+body .contenedor footer section:nth-child(3) #programmer > div > div.left_container.active > div.icons > a > i {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+body .contenedor footer section:nth-child(3) #programmer {
+  display: none;
+}
+
 .multimedia-ajustado {
   width: 100%;
 }
@@ -151,9 +190,50 @@ body .contenedor footer .icons a i:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  body .contenedor header nav .logo {
+    padding: 20px;
+  }
+  body .contenedor header nav .menu {
+    position: relative;
+    z-index: 10;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-left: -60%;
+  }
+  body .contenedor header nav .menu #menu {
+    vertical-align: top;
+    width: 40px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 20px;
+    color: white;
   }
   body .contenedor header nav ul {
+    margin-bottom: -40px;
     display: none;
+    background-color: #442054;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .5 ease;
+    transition: all .5 ease;
+  }
+  body .contenedor header nav ul li {
+    display: -ms-grid;
+    display: grid;
+    grid-row: span 1;
+    margin: 30px 0;
   }
   body .contenedor main {
     display: -ms-grid;
@@ -182,5 +262,16 @@ body .contenedor footer .icons a i:hover {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  body .contenedor footer section:nth-child(3) {
+    z-index: 7;
+  }
+  body .contenedor footer section:nth-child(3) #programmer > div > div.left_container.active > div.icons {
+    padding: 0;
+  }
+}
+
+.active-ul {
+  -webkit-transform: translate(-60vw);
+          transform: translate(-60vw);
 }
 /*# sourceMappingURL=style.css.map */
