@@ -1,9 +1,10 @@
 const m = document.getElementById("menu"), d = document.getElementById("deploy");
+//condicional para indicar que si está en esa reolución le ponga esa clase ("active-ul")
+/* if s*/
+window.screen.width >= 768 ? d.classList.toggle("active-ul") : d.classList.remove("active-ul")
 m.addEventListener("click",_=>{
-    d.style.display = "block"
     d.classList.toggle("active-ul")
-    // document.body.classList.toggle("opacity")
-    // m.addEventListener("click",_=>d.classList.remove("active"))
+    d.style.display = "block"
 })
 const b = document.getElementById("contact"), c = document.getElementById("contact");
 let card = document.getElementById("programmer");
