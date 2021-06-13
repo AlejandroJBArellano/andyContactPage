@@ -1,7 +1,7 @@
 const m = document.getElementById("menu"), d = document.getElementById("deploy");
 //condicional para indicar que si está en esa reolución le ponga esa clase ("active-ul")
 /* if s*/
-window.screen.width >= 768 ? d.classList.toggle("active-ul") : d.classList.remove("active-ul")
+// window.screen.width <= 768 ? d.classList.toggle("active-ul") : d.classList.remove("active-ul")
 m.addEventListener("click",_=>{
     d.classList.toggle("active-ul")
     d.style.display = "block"

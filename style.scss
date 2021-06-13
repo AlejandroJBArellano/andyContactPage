@@ -4,6 +4,7 @@ body{
     // font-family: 'Merriweather', serif;
     background: url("img/4.jpeg") fixed border-box no-repeat;
     background-size: cover;
+    margin: 0;
     .contenedor{
         margin: 0;
         width: 100%;
@@ -179,6 +180,9 @@ body{
                             color: white;
                         }
                     }
+                    .active-ul{
+                        transform: translate(-60vw);
+                    }
                     ul{
                         margin-bottom: -40px;
                         display: none;
@@ -227,7 +231,4 @@ body{
             }
         }
     }
-}
-.active-ul{
-    transform: translate(-60vw);
 }

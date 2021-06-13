@@ -3,6 +3,7 @@
 body {
   background: url("img/4.jpeg") fixed border-box no-repeat;
   background-size: cover;
+  margin: 0;
 }
 
 body .contenedor {
@@ -218,6 +219,10 @@ body .contenedor footer section:nth-child(3) #programmer {
     padding: 0 20px;
     color: white;
   }
+  body .contenedor header nav .active-ul {
+    -webkit-transform: translate(-60vw);
+            transform: translate(-60vw);
+  }
   body .contenedor header nav ul {
     margin-bottom: -40px;
     display: none;
@@ -268,10 +273,5 @@ body .contenedor footer section:nth-child(3) #programmer {
   body .contenedor footer section:nth-child(3) #programmer > div > div.left_container.active > div.icons {
     padding: 0;
   }
-}
-
-.active-ul {
-  -webkit-transform: translate(-60vw);
-          transform: translate(-60vw);
 }
 /*# sourceMappingURL=style.css.map */
